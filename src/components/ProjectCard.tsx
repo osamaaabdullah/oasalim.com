@@ -2,7 +2,7 @@ import { FileBraces } from "lucide-react"
 
 const ProjectCard = () => {
   return (
-    <div className="text-justify bg-white rounded-2xl mx-auto my-2 p-3">
+    <div className="text-justify bg-white rounded-2xl mx-auto my-2 pl-5 p-3">
         <p className="mb-4 flex gap-1 text-[#7E7E7E]"><FileBraces size={18} className="my-auto"/>Projects</p>
         <div className="flex gap-6">
             <a>

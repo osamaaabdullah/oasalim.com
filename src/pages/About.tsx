@@ -10,8 +10,10 @@ const About = () => {
         <p className="my-3">A <span className="font-bold">software developer</span> from Canada</p>
         <p className="text-justify p-3"> Interested in building apps that solves day to day problems.</p>
       </div>
-      <SkillsCard/>
-      <SocialMediaCard/>
+      <div className="md:flex gap-4 my-auto">
+        <div className="flex-2"><SkillsCard/></div>
+        <div className="flex-1"><SocialMediaCard/></div>
+      </div>
     </div>
   )
 }

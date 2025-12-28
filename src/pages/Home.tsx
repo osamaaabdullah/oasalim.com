@@ -5,8 +5,10 @@ import SocialMediaCard from "../components/SocialMediaCard"
 const Home = () => {
   return (
     <>
+      <div className="md:flex gap-2">
         <AboutCard/>
         <SocialMediaCard/>
+      </div>
         <ProjectCard/>
     </>
   )

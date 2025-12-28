@@ -7,7 +7,7 @@ import NavBar from './components/NavBar'
 
 const App = () => {
   return (
-    <>
+    <div className='md:w-9/10 lg:w-7/10 mx-auto'>
       <BrowserRouter>
         <NavBar/>
         <Routes>
@@ -16,7 +16,7 @@ const App = () => {
         </Routes>
         <Footer/>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 

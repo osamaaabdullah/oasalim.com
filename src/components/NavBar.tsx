@@ -19,7 +19,7 @@ const NavBar = () => {
     }
 
     return (
-        <header className="bg-white rounded-2xl p-2 mx-auto mb-8">
+        <header className="bg-white rounded-2xl pl-5 p-2 mx-auto mb-8">
             <nav className="flex flex-wrap relative">
                 
                 <ul className="lg:flex hidden gap-3">
