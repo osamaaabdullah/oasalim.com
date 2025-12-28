@@ -4,6 +4,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         </Routes>
         <Footer/>
       </BrowserRouter>
+      <Analytics/>
     </div>
   )
 }
