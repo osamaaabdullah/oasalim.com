@@ -4,12 +4,13 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
     <div className='md:w-9/10 lg:w-7/10 mx-auto'>
       <BrowserRouter>
+        <Analytics/>
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -17,7 +18,7 @@ const App = () => {
         </Routes>
         <Footer/>
       </BrowserRouter>
-      <Analytics/>
+     
     </div>
   )
 }
