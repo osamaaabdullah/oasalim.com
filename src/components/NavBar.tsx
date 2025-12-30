@@ -33,12 +33,12 @@ const NavBar = () => {
                 </ul>
                 
                 {isOpen ? 
-                <div className="h-svh w-svw fixed left-0 top-0 backdrop-blur-sm" onClick={handleClick}></div>
+                <div className="h-svh w-svw fixed left-0 top-0 backdrop-blur-sm z-10" onClick={handleClick}></div>
                 :
                 null
                 }
                 <button className="m-0 my-auto lg:hidden z-10 " onClick={handleClick}>{isOpen? <XIcon/> : <MenuIcon/>}</button>
-                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden">
+                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden z-10">
                     <ul className="my-4">
                     {navLinks.map((link) => (
                         <li key = {link.name} onClick={handleClick} className="m-2">
