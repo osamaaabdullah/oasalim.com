@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <div className="md:flex gap-2">
-        <AboutCard/>
-        <SocialMediaCard/>
+        <div className="flex-3 my-2"><AboutCard/></div>
+        <div className="flex-1 my-2"><SocialMediaCard/></div>
       </div>
         <ProjectCard/>
     </>

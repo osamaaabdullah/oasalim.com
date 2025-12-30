@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
-    <div className='md:w-9/10 lg:w-7/10 mx-auto'>
+    <div className='md:w-9/10 lg:w-8/10 min-[1100px]:ww-[70%] mx-auto'>
       <BrowserRouter>
         <Analytics/>
         <NavBar/>

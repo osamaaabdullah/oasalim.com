@@ -1,18 +1,30 @@
-import { Link } from "lucide-react"
+import { ArrowUpRight, Link } from "lucide-react"
 
 const SocialMediaCard = () => {
   return (
-    <div className="bg-white rounded-xl text-justify p-3 mx-auto my-2 flex-col grow">
+    <div className="bg-white rounded-xl text-justify p-3 mx-auto flex-col grow h-full">
         <p className="mb-2 flex gap-1 text-[#7E7E7E]"><Link className="my-auto" size={17}/>Links</p>
-        <div className="py-4 my-auto flex gap-3">
-            <a href="https://www.linkedin.com/in/osama-abdullah-bin-salim-241b79306" target="blank">
-                <img className="rounded-2xl mx-auto " src="/linkedin-logo.svg" width={90}/>
+        <div className="py-4 my-auto md:mx-auto w-fit grid md:grid-cols-2 grid-cols-4 md:justify-center gap-3">
+            <a href="https://www.linkedin.com/in/osama-abdullah-bin-salim-241b79306" target="blank" className="shrink-0 relative group">
+                <img className="rounded-2xl group-hover:opacity-50" src="/linkedin-logo.svg" width={75}/>
+                <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                    <ArrowUpRight size={30}/>
+                </div>
             </a>
-            <a href="https://github.com/osamaaabdullah" target="blank">
-                <img className="rounded-2xl" src="/github-logo.svg" width={90}/>
+            <a href="https://github.com/osamaaabdullah" target="blank" className="shrink-0 relative group">
+                <img className="rounded-2xl group-hover:opacity-70" src="/github-logo.svg" width={75}/>
+                <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                    <ArrowUpRight size={30}/>
+                </div>
             </a>
-            <a href="https://www.behance.net/osamaaabdullah" target="blank">
-                <img className="rounded-2xl" src="/behance-logo.svg" width={90}/>
+            <a href="https://www.behance.net/osamaaabdullah" target="blank" className="shrink-0 relative group">
+                <img className="rounded-2xl group-hover:opacity-70" src="/behance-logo.svg" width={75}/>
+                <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                    <ArrowUpRight size={30}/>
+                </div>
             </a>
         </div>
     </div>
