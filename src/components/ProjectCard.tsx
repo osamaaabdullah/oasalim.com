@@ -5,7 +5,7 @@ const skillStyle = "bg-[#F2F2F2] p-1 rounded-full text-sm px-3 hover:scale-105 t
 
 const ProjectCard = () => {
   return (
-    <div className="text-justify bg-white rounded-2xl mx-auto my-2 pl-5 p-3">
+    <div className="text-justify bg-white rounded-2xl mx-auto my-2 pl-5 p-3 pb-8">
         <p className="mb-4 flex gap-1 text-[#7E7E7E]"><FileBraces size={18} className="my-auto"/>Projects</p>
         <div className="flex gap-6">
             <a className="shrink-0">
