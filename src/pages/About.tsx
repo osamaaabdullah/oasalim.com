@@ -11,9 +11,9 @@ const About = () => {
         <p className="my-3">A <span className="font-bold">software developer</span> from Canada</p>
         <p className="text-center p-3"> Interested in building apps that solves day to day problems.</p>
       </div>
-      <div className="md:flex gap-6 my-auto mt-8">
-        <div className="flex-2"><SkillsCard/></div>
-        <div className="flex-1"><SocialMediaCard/></div>
+      <div className="md:flex gap-6 my-auto">
+        <div className="flex-2 mt-8"><SkillsCard/></div>
+        <div className="flex-1 mt-8"><SocialMediaCard/></div>
       </div>
     </div>
   )
