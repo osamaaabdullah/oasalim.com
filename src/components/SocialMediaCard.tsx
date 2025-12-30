@@ -8,21 +8,21 @@ const SocialMediaCard = () => {
             <a href="https://www.linkedin.com/in/osama-abdullah-bin-salim-241b79306" target="blank" className="shrink-0 relative group">
                 <img className="rounded-2xl group-hover:opacity-50" src="/linkedin-logo.svg" width={75}/>
                 <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
-                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                <div className="absolute top-6 right-6 md:top-6 md:right-5 hidden group-hover:block text-white">
                     <ArrowUpRight size={30}/>
                 </div>
             </a>
             <a href="https://github.com/osamaaabdullah" target="blank" className="shrink-0 relative group">
                 <img className="rounded-2xl group-hover:opacity-70" src="/github-logo.svg" width={75}/>
                 <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
-                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                <div className="absolute top-6 right-6 md:top-6 md:right-5 hidden group-hover:block text-white">
                     <ArrowUpRight size={30}/>
                 </div>
             </a>
             <a href="https://www.behance.net/osamaaabdullah" target="blank" className="shrink-0 relative group">
                 <img className="rounded-2xl group-hover:opacity-70" src="/behance-logo.svg" width={75}/>
                 <div className="absolute inset-0 rounded-2xl bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
-                <div className="absolute top-6 right-6 md:top-4 md:right-4 hidden group-hover:block text-white">
+                <div className="absolute top-6 right-6 md:top-6 md:right-5 hidden group-hover:block text-white">
                     <ArrowUpRight size={30}/>
                 </div>
             </a>
