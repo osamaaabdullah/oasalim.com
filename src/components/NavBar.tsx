@@ -1,18 +1,24 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import { XIcon, MenuIcon } from "lucide-react"
+import ThemeToggleButton from "./ThemeToggleButton"
 
 interface NavLinkType {
     name: string
     path: string
 }
 
+type NavbarProps = {
+    isDark: boolean
+    handleChange: () => void;
+};
+
 const navLinks: NavLinkType[] = [
     {name: 'Home', path: '/'},
     {name: 'About', path: '/about'}
 ]
 
-const NavBar = () => {
+const NavBar = ( {isDark, handleChange}: NavbarProps) => {
     const[isOpen, setIsOpen] = useState(false);
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -20,7 +26,7 @@ const NavBar = () => {
 
     return (
         <header className="bg-white dark:bg-[#171717] rounded-2xl p-3 mx-auto mb-8">
-            <nav className="flex flex-wrap relative">
+            <nav className="flex flex-wrap relative justify-between">
                 
                 <ul className="lg:flex hidden gap-1">
                     {navLinks.map((link) => (
@@ -51,6 +57,9 @@ const NavBar = () => {
                 </div>
                 : 
                 null}
+                <div>
+                    <ThemeToggleButton isDark={isDark} handleChange={handleChange}/>
+                </div>
             </nav>
         </header>
     )
