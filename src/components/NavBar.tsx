@@ -19,12 +19,12 @@ const NavBar = () => {
     }
 
     return (
-        <header className="bg-white rounded-2xl p-3 mx-auto mb-8">
+        <header className="bg-white dark:bg-[#171717] rounded-2xl p-3 mx-auto mb-8">
             <nav className="flex flex-wrap relative">
                 
                 <ul className="lg:flex hidden gap-1">
                     {navLinks.map((link) => (
-                        <li key = {link.name} className="hover:bg-[#F2F2F2] hover:text-black rounded-full px-3 py-1">
+                        <li key = {link.name} className="hover:bg-[#F2F2F2] hover:text-black rounded-full px-3 py-1 dark:hover:bg-neutral-800 hover:text-white">
                             <NavLink to={link.path}>
                                 {link.name}
                             </NavLink>

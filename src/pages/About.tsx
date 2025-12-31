@@ -4,10 +4,10 @@ import SocialMediaCard from "../components/SocialMediaCard"
 const About = () => {
   return (
     <div>
-      <div className="bg-white p-3 rounded-2xl mx-auto my-2">
+      <div className="bg-white dark:bg-[#171717] p-3 rounded-2xl mx-auto my-2">
         <img className="rounded-full h-40 w-40 mx-auto my-2" src="/Osama.jpg" alt="Profile Picture"/>
         <h2 className="font-medium text-xl mb-2"> Hello, I am Osama</h2>
-        <h1 className="text-2xl font-bold my-2 text-black">I am passionate about developing <span className="underline">Apps</span> that makes life easier.</h1>
+        <h1 className="text-2xl font-bold my-2 text-black dark:text-white">I am passionate about developing <span className="">Apps</span> that makes life easier.</h1>
         <p className="my-3">A <span className="font-bold">software developer</span> from Canada</p>
         <p className="text-center p-3"> Interested in building apps that solves day to day problems.</p>
       </div>

@@ -2,7 +2,7 @@ import { ArrowUpRight, Link } from "lucide-react"
 
 const SocialMediaCard = () => {
   return (
-    <div className="bg-white rounded-xl text-justify p-3 mx-auto flex-col grow h-full">
+    <div className="bg-white dark:bg-[#171717] rounded-xl text-justify p-3 mx-auto flex-col grow h-full">
         <p className="mb-2 flex gap-1 text-[#7E7E7E]"><Link className="my-auto" size={17}/>Links</p>
         <div className="py-4 my-auto md:mx-auto w-fit grid md:grid-cols-2 grid-cols-4 md:justify-center gap-3">
             <a href="https://www.linkedin.com/in/osama-abdullah-bin-salim-241b79306" target="blank" className="shrink-0 relative group">
