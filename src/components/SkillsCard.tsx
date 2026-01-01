@@ -1,7 +1,7 @@
 import { ListCheck } from "lucide-react"
 
 const SkillsCard = () => {
-  const skills = ["AWS", "Azure", "Docker", "Express.js", "FastAPI", "Flask", "Git", "Google Cloud Platform", "Java", "JavaScript", "JUnit", "Mocktest", "Node.js", "Python", "React", "Selenium", "SQL", "Web Scraping"]
+  const skills = ["AWS", "Azure", "Docker", "Express.js", "FastAPI", "Flask", "Git", "GitHub Actions", "Google Cloud Platform", "Java", "JavaScript", "JUnit", "Mocktest","Next.js", "Node.js", "Postgres", "Python", "React", "Selenium", "SQL", "TypeScript", "Web Scraping"]
   const style = "bg-[#F2F2F2] dark:bg-[#292929] dark:text-white p-1 rounded-full text-sm px-3 my-0.5 hover:scale-105 transition-transform duration-200"
 
   return (
