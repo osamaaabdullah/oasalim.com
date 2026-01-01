@@ -44,7 +44,7 @@ const NavBar = ( {isDark, handleChange}: NavbarProps) => {
                 null
                 }
                 <button className="m-0 my-auto lg:hidden z-10 " onClick={handleClick}>{isOpen? <XIcon/> : <MenuIcon/>}</button>
-                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden z-10">
+                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden z-10 dark:text-white dark:bg-[#171717]">
                     <ul className="my-4">
                     {navLinks.map((link) => (
                         <li key = {link.name} onClick={handleClick} className="m-2">
