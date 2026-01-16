@@ -6,7 +6,7 @@ const UserSchema = mongoose.Schema(
             type: String,
             required: [true, "Please provide email"]
         },
-        hashed_password: {
+        hashedPassword: {
             type: String,
             required: [true, "Please provide password"]
         }
