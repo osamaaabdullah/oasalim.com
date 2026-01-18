@@ -3,6 +3,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
+import Blog from './pages/Blog'
 import { Analytics } from "@vercel/analytics/react"
 import { useEffect, useState } from 'react'
 
@@ -27,6 +28,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path ="/about" element={<About />}/>
+          {/* Disabled for prod, uncomment the line below for local testing */}
+          {/* <Route path ="/blog" element={<Blog />}/> */}
         </Routes>
         <Footer/>
       </BrowserRouter>
