@@ -30,7 +30,7 @@ const NavBar = ( {isDark, handleChange}: NavbarProps) => {
                 
                 <ul className="lg:flex hidden gap-1">
                     {navLinks.map((link) => (
-                        <li key = {link.name} className="hover:bg-[#F2F2F2] hover:text-black rounded-full px-3 py-1 dark:hover:bg-neutral-800 dark:hover:text-white">
+                        <li key = {link.name} className="hover:bg-[#F2F2F2] hover:text-black rounded-full px-3 py-1 dark:hover:bg-neutral-800 dark:hover:text-white my-auto">
                             <NavLink to={link.path}>
                                 {link.name}
                             </NavLink>
@@ -44,7 +44,7 @@ const NavBar = ( {isDark, handleChange}: NavbarProps) => {
                 null
                 }
                 <button className="m-0 my-auto lg:hidden z-10 " onClick={handleClick}>{isOpen? <XIcon/> : <MenuIcon/>}</button>
-                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden z-10 dark:text-white dark:bg-[#171717]">
+                {isOpen ? <div className="bg-white w-1/2 absolute top-10 rounded-2xl lg:hidden z-10 dark:text-white dark:bg-[#171717] my-auto">
                     <ul className="my-4">
                     {navLinks.map((link) => (
                         <li key = {link.name} onClick={handleClick} className="m-2">
