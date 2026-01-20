@@ -15,6 +15,7 @@ type NavbarProps = {
 
 const navLinks: NavLinkType[] = [
     {name: 'Home', path: '/'},
+    {name: 'Blog', path: '/blog'},
     {name: 'About', path: '/about'}
 ]
 
