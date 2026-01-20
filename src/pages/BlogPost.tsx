@@ -31,7 +31,7 @@ const BlogPost = () => {
             setIsLoading(true);
 
             try {
-                const response = await fetch(`${API_URL}/${id}`);
+                const response = await fetch(`${API_URL}/api/post/${id}`);
                 const post = await response.json() as Post;
                 setPost(post);
             } catch (error: any) {

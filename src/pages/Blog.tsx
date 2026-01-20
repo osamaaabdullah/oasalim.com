@@ -22,7 +22,7 @@ const Blog = () => {
             setIsLoading(true);
 
             try {
-                const response = await fetch(`${API_URL}/posts`);
+                const response = await fetch(`${API_URL}/api/posts`);
                 const posts = await response.json() as Post[];
                 setPosts(posts);
             } catch (error: any) {
