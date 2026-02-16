@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getPostById, postPost, updatePost, deletePost} = require('../controller/post.controller.js')
+const {getPostById, postPost, updatePost, deletePost} = require('../controllers/post.controller.js')
 const {authMiddleware} = require('../middleware/auth.middleware.js');
 
 router.get('/:id', getPostById);

@@ -1,15 +1,19 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
+
+
 const postsRoute = require('./routes/posts.route.js');
 const postRoutes = require('./routes/post.route.js');
 const authRoutes = require('./routes/auth.route.js');
 const app = express();
-const port = process.env.PORT;
+
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  process.env.FRONTEND_DEV_PORT ? `http://localhost:${process.env.FRONTEND_DEV_PORT}` : "http://localhost:5173"]
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: allowedOrigins,
   credentials: true,
 }));
 
@@ -25,15 +29,6 @@ app.get('/', (req, res) => {
   res.send('Welcome to my blog!');
 });
 
-mongoose.connect(process.env.DATABASE_URI).then(
-  () => {
-    console.log('Connected to DB');
-    app.listen(port, () => {
-      console.log(`Example app listening on port ${port}`);
-    });
-  }
-).catch(
-  () => {
-    console.log('Connection failed');
-  }
-);
+
+
+module.exports = app;

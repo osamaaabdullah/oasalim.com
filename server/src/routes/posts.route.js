@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getPosts} = require('../controller/posts.controller.js')
+const {getPosts} = require('../controllers/posts.controller.js')
 
 router.get('/', getPosts);
 
