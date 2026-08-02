@@ -1,6 +1,7 @@
 import AboutCard from "../components/AboutCard"
 import Education from "../components/Education"
 import Experience from "../components/Experience"
+import GoalsCard from "../components/GoalsCard"
 import ProjectCard from "../components/ProjectCard"
 import SocialMediaCard from "../components/SocialMediaCard"
 
@@ -14,6 +15,7 @@ const Home = () => {
         <div className="mb-8"><ProjectCard/></div>
         <div className="mb-8"><Education/></div>
         <div className="mb-8"><Experience/></div>
+        <div className="mb-8"><GoalsCard/></div>
     </>
   )
 }
