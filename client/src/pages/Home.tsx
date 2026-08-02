@@ -12,9 +12,9 @@ const Home = () => {
         <div className="flex-3 my-4"><AboutCard/></div>
         <div className="flex-1 my-4"><SocialMediaCard/></div>
       </div>
-        <div className="mb-8"><ProjectCard/></div>
         <div className="mb-8"><Education/></div>
         <div className="mb-8"><Experience/></div>
+        <div className="mb-8"><ProjectCard/></div>
         <div className="mb-8"><GoalsCard/></div>
     </>
   )
