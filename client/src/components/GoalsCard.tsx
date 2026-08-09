@@ -1,6 +1,6 @@
 const GoalsCard = () => {
     return (
-        <div className="bg-white dark:bg-[#171717] rounded-2xl mx-auto my-2 p-5 pt-3 pr-3 pb-8 text-left">
+        <div className="bg-white dark:bg-[#171717] rounded-2xl mx-auto my-2 p-5 pt-3 pb-8 text-left">
             <p className="mb-4 text-[#7E7E7E]">Goals</p>
 
             <div className="space-y-8">

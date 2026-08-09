@@ -1,7 +1,7 @@
 
 const Experience = () => {
     return (
-        <div className="text-justify bg-white dark:bg-[#171717] rounded-2xl mx-auto my-2 pl-5 p-3 pb-8">
+        <div className="text-justify bg-white dark:bg-[#171717] rounded-2xl mx-auto my-2 px-5 p-3 pb-8">
             <p className="mb-4 flex gap-1 text-[#7E7E7E]">Experience</p>
             <div className="flex gap-6">
                 <img src="/Vero Logo.svg" width={80} alt="York University Logo" />
@@ -33,6 +33,9 @@ const Experience = () => {
                         </ul>
                     </p>
                 </div>
+            </div>
+            <div className="mt-3">
+                 Learn more about my experience through my <a href="https://files.oasalim.com/Salim_Osama_Resume.pdf" className="font-bold hover:underline hover:text-blue-400" target="blank">résumé</a>.
             </div>
         </div>
     )
